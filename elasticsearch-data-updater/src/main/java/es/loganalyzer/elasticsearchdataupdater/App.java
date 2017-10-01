@@ -1,4 +1,4 @@
-package es.loganalyzer.elasticsearchdataupdater.elasticsearch_data_updater;
+package es.loganalyzer.elasticsearchdataupdater;
 
 /**
  * Hello world!
