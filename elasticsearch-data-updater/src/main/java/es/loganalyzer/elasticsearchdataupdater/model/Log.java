@@ -1,6 +1,18 @@
 package es.loganalyzer.elasticsearchdataupdater.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.elasticsearch.annotations.Document;
+
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+@Document(indexName = "loganalyzer", type = "logs")
 public class Log {
+
+	@Id
+	private String id;
 
 	private String entireLog;
 	private String timeStamp;
@@ -8,12 +20,23 @@ public class Log {
 	private String level;
 	private String loggerName;
 	private String formattedMessage;
-	
+
 	public Log() {
 	}
 
-	public Log(String entireLog, String timeStamp, String threadName, String level, String loggerName,
+	public Log(String id, String entireLog) {
+		this.id = id;
+		this.entireLog = entireLog;
+		this.timeStamp = "-";
+		this.threadName = "-";
+		this.level = "-";
+		this.loggerName = "-";
+		this.formattedMessage = "-";
+	}
+
+	public Log(String id, String entireLog, String timeStamp, String threadName, String level, String loggerName,
 			String formattedMessage) {
+		this.id = id;
 		this.entireLog = entireLog;
 		this.timeStamp = timeStamp;
 		this.threadName = threadName;
