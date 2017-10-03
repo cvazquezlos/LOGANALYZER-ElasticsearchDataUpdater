@@ -5,7 +5,7 @@
 	<groupId>es.loganalyzer.elasticsearchdataupdater</groupId>
 	<artifactId>elasticsearch-data-updater</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -35,7 +35,8 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.16.16</version>
+			<version>1.16.18</version>
+			<scope>provided</scope>
 		</dependency>
 
 	    <dependency>

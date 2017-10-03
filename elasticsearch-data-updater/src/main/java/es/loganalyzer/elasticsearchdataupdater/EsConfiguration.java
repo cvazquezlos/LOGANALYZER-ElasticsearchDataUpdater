@@ -26,7 +26,7 @@ import es.loganalyzer.elasticsearchdataupdater.repository.LogRepository;
 
 @Configuration
 @EnableElasticsearchRepositories
-class Configuration {
+class EsConfiguration {
 
 	@Autowired
 	ElasticsearchOperations operations;
@@ -74,7 +74,7 @@ class Configuration {
 		}
 		int index = this.getFirstIndex(data);
 		for (int i=0; i<index; i++) {
-			repository.save(Log.builder().entireLog(data.get(0)));
+			repository.save(Log.builder().entireLog(data.get(0)).build());
 			data.remove(0);
 		}
 		index = this.getSecondIndex(data);
