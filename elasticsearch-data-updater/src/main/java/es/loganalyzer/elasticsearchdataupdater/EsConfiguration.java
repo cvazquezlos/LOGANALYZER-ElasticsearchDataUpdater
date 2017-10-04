@@ -5,7 +5,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.UUID;
 
 import javax.annotation.PostConstruct;
@@ -18,7 +17,6 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.elasticsearch.client.NodeClientFactoryBean;
 import org.springframework.data.elasticsearch.core.ElasticsearchOperations;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
-import org.springframework.data.elasticsearch.core.geo.GeoPoint;
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
 import es.loganalyzer.elasticsearchdataupdater.model.Log;
@@ -54,7 +52,8 @@ class EsConfiguration {
 	public void deleteIndex() {
 		operations.deleteIndex(Log.class);
 	}
- //https://examples.javacodegeeks.com/enterprise-java/spring/spring-data-elasticsearch-example/
+
+	// https://examples.javacodegeeks.com/enterprise-java/spring/spring-data-elasticsearch-example/
 	@PostConstruct
 	public void insertDataSample() {
 		// Remove all documents
@@ -69,34 +68,56 @@ class EsConfiguration {
 			while ((line = br.readLine()) != null) {
 				data.add(line);
 			}
-		} catch (IOException e){
+			br.close();
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		int index = this.getFirstIndex(data);
-		for (int i=0; i<index; i++) {
+		for (int i = 0; i < index; i++) {
 			repository.save(Log.builder().entireLog(data.get(0)).build());
 			data.remove(0);
 		}
 		index = this.getSecondIndex(data);
+		for (int i = 0; i < index; i++) {
+			String log = data.get(0);
+			String[] args = this.getArgs(log);
+			repository.save(Log.builder().entireLog(log).timeStamp(args[0]).threadName(args[1]).level(args[2])
+					.loggerName(args[3]).formattedMessage(args[4]).build());
+			data.remove(0);
+		}
 	}
-	
+
 	private int getFirstIndex(ArrayList<String> data) {
 		int i = 0;
-		for(String log: data) {
-			if (log.startsWith("R")) 
+		for (String log : data) {
+			if (log.startsWith("2"))
 				break;
 			i++;
 		}
-		return i+2;
+		return i;
 	}
-	
+
 	private int getSecondIndex(ArrayList<String> data) {
-		int i = 0; 
-		for(String log: data) {
+		int i = 0;
+		for (String log : data) {
 			if (log.startsWith("Tests run"))
 				break;
 			i++;
 		}
 		return i;
+	}
+
+	private String[] getArgs(String log) {
+		String[] args = new String[5];
+		String[] rowData = log.split(" ");
+		args[0] = rowData[0] + " " + rowData[1];
+		args[1] = rowData[2];
+		args[2] = rowData[3];
+		args[3] = rowData[5];
+		args[4] = rowData[7];
+		for (int i = 8; i <= rowData.length; i++) {
+			args[4] += args[4] + " " + args[i];
+		}
+		return args;
 	}
 }

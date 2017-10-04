@@ -1,10 +1,7 @@
 package es.loganalyzer.elasticsearchdataupdater.model;
 
-import static org.springframework.data.elasticsearch.annotations.FieldType.*;
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
-import org.springframework.data.elasticsearch.annotations.Field;
 
 import lombok.Builder;
 import lombok.Data;
@@ -18,7 +15,7 @@ public class Log {
 	private String id;
 
 	private String entireLog;
-	private @Field(type = Date)String timeStamp;
+	private String timeStamp;
 	private String threadName;
 	private String level;
 	private String loggerName;
