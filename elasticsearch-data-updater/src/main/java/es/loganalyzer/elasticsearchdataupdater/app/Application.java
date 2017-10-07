@@ -29,31 +29,38 @@ public class Application {
 	public static void inserDataIntoElasticsearch() {
 		ArrayList<String> data = new ArrayList<String>();
 		try {
-			File f = new File("src/main/resources/log.txt");
+			File f = new File("log.txt");
 			BufferedReader br = new BufferedReader(new FileReader(f));
 			String line = "";
 			while ((line = br.readLine()) != null) {
+				System.out.println(line);
 				data.add(line);
 			}
 			br.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		System.out.println("---------------------------------------------------------------------------------------------------------------- start01------------------------------------");
 		Integer i = 0;
 		while (data.get(0).indexOf("2") != 0) {
 			Log log = new Log(i.toString(), data.get(0));
-			repository.save(log);
+			System.out.println(data.get(0));
+			data.remove(0);
 			i++;
 		}
+		System.out.println("---------------------------------------------------------------------------------------------------------------- start02------------------------------------");
 		while (data.get(0).indexOf("T") != 0) {
 			String[] args = getArgs(data.get(0));
 			Log log = new Log(i.toString(), data.get(0), args[0], args[1], args[2], args[3], args[4]);
-			repository.save(log);
+			System.out.println(data.get(0));
+			data.remove(0);
 			i++;
 		}
+		System.out.println("---------------------------------------------------------------------------------------------------------------- start03------------------------------------");
 		while (data.get(0) != null) {
 			Log log = new Log(i.toString(), data.get(0));
-			repository.save(log);
+			System.out.println(data.get(0));
+			data.remove(0);
 			i++;
 		}
 	}
