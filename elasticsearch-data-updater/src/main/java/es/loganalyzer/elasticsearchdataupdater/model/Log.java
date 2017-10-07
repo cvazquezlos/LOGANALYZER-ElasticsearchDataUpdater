@@ -2,12 +2,8 @@ package es.loganalyzer.elasticsearchdataupdater.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
+import org.springframework.data.elasticsearch.annotations.Field;
 
-import lombok.Builder;
-import lombok.Data;
-
-@Data
-@Builder
 @Document(indexName = "loganalyzer", type = "logs")
 public class Log {
 
@@ -15,7 +11,7 @@ public class Log {
 	private String id;
 
 	private String entireLog;
-	private String timeStamp;
+	private @Field String timestamp;
 	private String threadName;
 	private String level;
 	private String loggerName;
@@ -27,7 +23,7 @@ public class Log {
 	public Log(String id, String entireLog) {
 		this.id = id;
 		this.entireLog = entireLog;
-		this.timeStamp = "-";
+		this.timestamp = "-";
 		this.threadName = "-";
 		this.level = "-";
 		this.loggerName = "-";
@@ -38,16 +34,72 @@ public class Log {
 			String formattedMessage) {
 		this.id = id;
 		this.entireLog = entireLog;
-		this.timeStamp = timeStamp;
+		this.timestamp = timeStamp;
 		this.threadName = threadName;
 		this.level = level;
 		this.loggerName = loggerName;
 		this.formattedMessage = formattedMessage;
 	}
 
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getEntireLog() {
+		return entireLog;
+	}
+
+	public void setEntireLog(String entireLog) {
+		this.entireLog = entireLog;
+	}
+
+	public String getTimestamp() {
+		return timestamp;
+	}
+
+	public void setTimestamp(String timestamp) {
+		this.timestamp = timestamp;
+	}
+
+	public String getThreadName() {
+		return threadName;
+	}
+
+	public void setThreadName(String threadName) {
+		this.threadName = threadName;
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+
+	public String getLoggerName() {
+		return loggerName;
+	}
+
+	public void setLoggerName(String loggerName) {
+		this.loggerName = loggerName;
+	}
+
+	public String getFormattedMessage() {
+		return formattedMessage;
+	}
+
+	public void setFormattedMessage(String formattedMessage) {
+		this.formattedMessage = formattedMessage;
+	}
+
 	@Override
 	public String toString() {
-		return "Log{" + "entireLog='" + entireLog + '\'' + ", timeStamp='" + timeStamp + '\'' + ", threadName='"
+		return "Log{" + "entireLog='" + entireLog + '\'' + ", timeStamp='" + timestamp + '\'' + ", threadName='"
 				+ threadName + '\'' + ", level='" + level + '\'' + ", loggerName='" + loggerName + '\''
 				+ ", formattedMessage='" + formattedMessage + '\'' + '}';
 	}
