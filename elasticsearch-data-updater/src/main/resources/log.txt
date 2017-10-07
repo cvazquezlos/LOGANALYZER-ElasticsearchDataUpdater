@@ -1,0 +1,77 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spring-log-generator 1.0.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.6.1/maven-clean-plugin-2.6.1.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.6.1/maven-clean-plugin-2.6.1.pom (5.0 kB at 4.3 kB/s)
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/26/maven-plugins-26.pom
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/26/maven-plugins-26.pom (11 kB at 90 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ spring-log-generator ---
+[INFO] Downloading: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar
+[INFO] Downloaded: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/1.1/plexus-utils-1.1.jar (169 kB at 720 kB/s)
+[INFO] Deleting C:\Users\c.vazquezlos\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spring-log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spring-log-generator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to C:\Users\c.vazquezlos\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spring-log-generator ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\c.vazquezlos\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spring-log-generator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to C:\Users\c.vazquezlos\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ spring-log-generator ---
+[INFO] Surefire report directory: C:\Users\c.vazquezlos\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running es.loganalyzer.springloggenerator.PasswordGeneratorTest
+2017-10-08 00:39:50.426 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. secLevel must have an int value in gradeLevel variable.
+2017-10-08 00:39:50.499 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. secLevel must have an int value in gradeLevel variable.
+2017-10-08 00:39:50.564 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. First condition. numChat must contain a valid int value.
+2017-10-08 00:39:50.564 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Second condition. secLevel must contain a valid String value.
+2017-10-08 00:39:50.565 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Third condition. specialChar must contain a valid boolean value.
+2017-10-08 00:39:50.605 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Fourth condition. numbers must contain a valid boolean value.
+2017-10-08 00:39:50.605 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Fifth condition. wantRepeated must contain a valid boolean value.
+2017-10-08 00:39:50.606 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Sixth condition. regionChar must contain a valid String value.
+2017-10-08 00:39:50.606 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. First condition. numChat must contain a valid int value.
+2017-10-08 00:39:50.606 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Second condition. secLevel must contain a valid String value.
+2017-10-08 00:39:50.606 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Third condition. specialChar must contain a valid boolean value.
+2017-10-08 00:39:50.606 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Fourth condition. numbers must contain a valid boolean value.
+2017-10-08 00:39:50.606 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Fifth condition. wantRepeated must contain a valid boolean value.
+2017-10-08 00:39:50.607 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Sixth condition. regionChar must contain a valid String value.
+2017-10-08 00:39:50.659 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. regionChars must contain US / UK regional chars.
+2017-10-08 00:39:50.659 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. regionChars must contain SP regional chars.
+2017-10-08 00:39:50.707 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Password generated and its value is 8PV6Jp9d731e.
+2017-10-08 00:39:50.707 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Password generated and its value is 2o{&417F.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.727 sec - in es.loganalyzer.springloggenerator.PasswordGeneratorTest
+
+Results :
+
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.6:jar (default-jar) @ spring-log-generator ---
+[INFO] Building jar: C:\Users\c.vazquezlos\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\spring-log-generator-1.0.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.5.2:install (default-install) @ spring-log-generator ---
+[INFO] Installing C:\Users\c.vazquezlos\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\spring-log-generator-1.0.0-SNAPSHOT.jar to C:\Users\c.vazquezlos\.m2\repository\es\loganalyzer\spring-log-generator\1.0.0-SNAPSHOT\spring-log-generator-1.0.0-SNAPSHOT.jar
+[INFO] Installing C:\Users\c.vazquezlos\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\pom.xml to C:\Users\c.vazquezlos\.m2\repository\es\loganalyzer\spring-log-generator\1.0.0-SNAPSHOT\spring-log-generator-1.0.0-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 21.688 s
+[INFO] Finished at: 2017-10-08T00:39:53+02:00
+[INFO] Final Memory: 32M/220M
+[INFO] ------------------------------------------------------------------------

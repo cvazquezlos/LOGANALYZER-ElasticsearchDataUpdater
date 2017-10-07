@@ -11,7 +11,7 @@ public class Log {
 	private String id;
 
 	private String entireLog;
-	private @Field String timestamp;
+	private String timestamp;
 	private String threadName;
 	private String level;
 	private String loggerName;
