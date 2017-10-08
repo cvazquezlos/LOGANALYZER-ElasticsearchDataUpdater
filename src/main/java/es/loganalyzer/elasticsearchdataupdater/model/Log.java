@@ -30,6 +30,26 @@ public class Log {
 		this.formattedMessage = "-";
 	}
 
+	public Log(String id, String entireLog, String level, String formattedMessage) {
+		this.id = id;
+		this.entireLog = entireLog;
+		this.timestamp = "-";
+		this.threadName = "-";
+		this.level = level;
+		this.loggerName = "-";
+		this.formattedMessage = formattedMessage;
+	}
+
+	public Log(String id, String entireLog, String formattedMessage) {
+		this.id = id;
+		this.entireLog = entireLog;
+		this.timestamp = "-";
+		this.threadName = "-";
+		this.level = "-";
+		this.loggerName = "-";
+		this.formattedMessage = formattedMessage;
+	}
+
 	public Log(String id, String entireLog, String timeStamp, String threadName, String level, String loggerName,
 			String formattedMessage) {
 		this.id = id;
