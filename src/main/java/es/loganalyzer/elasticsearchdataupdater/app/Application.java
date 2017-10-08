@@ -13,20 +13,25 @@ import org.springframework.context.annotation.Import;
 
 import es.loganalyzer.elasticsearchdataupdater.model.Log;
 import es.loganalyzer.elasticsearchdataupdater.repository.LogRepository;
+import es.loganalyzer.elasticsearchdataupdater.service.ESLogService;
 
 @SpringBootApplication
 @Import(EsConfiguration.class)
 public class Application {
 	
-	@Autowired
-	public LogRepository repository;
+	private static ESLogService service;
 
-	public void main(String[] args) {
+	@Autowired
+	public void ESLogService(ESLogService service) {
+		this.service = service;
+	}
+
+	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 		inserDataIntoElasticsearch();
 	}
 
-	public void inserDataIntoElasticsearch() {
+	public static void inserDataIntoElasticsearch() {
 		ArrayList<String> data = new ArrayList<String>();
 		try {
 			File f = new File("log.txt");
@@ -42,23 +47,26 @@ public class Application {
 		Integer i = 0;
 		while (data.get(0).indexOf("2") != 0) {
 			Log log = new Log(i.toString(), data.get(0));
+			service.save(log);
 			data.remove(0);
 			i++;
 		}
 		while (data.get(0).indexOf("T") != 0) {
 			String[] args = getArgs(data.get(0));
 			Log log = new Log(i.toString(), data.get(0), args[0], args[1], args[2], args[3], args[4]);
+			service.save(log);
 			data.remove(0);
 			i++;
 		}
 		while (!data.isEmpty()) {
 			Log log = new Log(i.toString(), data.get(0));
+			service.save(log);
 			data.remove(0);
 			i++;
 		}
 	}
 
-	private String[] getArgs(String string) {
+	private static String[] getArgs(String string) {
 		String[] args = new String[5];
 		String[] data = string.split(" ");
 		args[0] = data[0] + " " + data[1];
