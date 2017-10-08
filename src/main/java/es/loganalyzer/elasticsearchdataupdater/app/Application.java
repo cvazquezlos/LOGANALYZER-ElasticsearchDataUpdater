@@ -29,7 +29,8 @@ public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
-		inserDataIntoElasticsearch();
+		resetIndex();
+		//inserDataIntoElasticsearch();
 	}
 
 	public static void inserDataIntoElasticsearch() {
@@ -68,25 +69,28 @@ public class Application {
 		while (data.get(0).indexOf("2") != 0) {
 			System.out.println(data.get(0));
 			Log log = new Log(i.toString(), data.get(0));
+			service.save(log);
 			data.remove(0);
 			i++;
 		}
 		while (data.get(0).indexOf("T") != 0) {
-			String[] args = getArgs(data.get(0));
+			String[] args = getArgsLogback(data.get(0));
 			System.out.println(data.get(0));
 			Log log = new Log(i.toString(), data.get(0), args[0], args[1], args[2], args[3], args[4]);
+			service.save(log);
 			data.remove(0);
 			i++;
 		}
 		while (!data.isEmpty()) {
 			System.out.println(data.get(0));
 			Log log = new Log(i.toString(), data.get(0));
+			service.save(log);
 			data.remove(0);
 			i++;
 		}
 	}
 
-	private static String[] getArgs(String string) {
+	private static String[] getArgsLogback(String string) {
 		String[] args = new String[5];
 		String[] data = string.split(" ");
 		args[0] = data[0] + " " + data[1];
@@ -99,5 +103,16 @@ public class Application {
 		}
 		return args;
 	}
-
+	
+	private static String[] getArgsNormal() {
+		String[] args = new String[5];
+		return args;
+	}
+	
+	private static void resetIndex() {
+		Iterable<Log> savedLogs = service.findAll();
+		for(Log log: savedLogs) {
+			service.delete(log);
+		}
+	}
 }

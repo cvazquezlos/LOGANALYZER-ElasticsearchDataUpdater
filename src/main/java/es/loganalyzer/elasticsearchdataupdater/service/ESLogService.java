@@ -18,15 +18,23 @@ public class ESLogService {
 		this.repository = repository;
 	}
 
-	public String save(Log location) {
-		return repository.save(location).getId();
+	public void delete(Log log) {
+		repository.delete(log);
 	}
 
-	public Log findOne(String id) {
-		return repository.findOne(id);
+	public Iterable<Log> findAll() {
+		return repository.findAll();
 	}
 
 	public List<Log> findByTimestamp(String timestamp, int page, int size) {
 		return repository.findByTimestamp(timestamp, new PageRequest(page, size)).getContent();
+	}
+	
+	public Log findOne(String id) {
+		return repository.findOne(id);
+	}
+
+	public String save(Log location) {
+		return repository.save(location).getId();
 	}
 }
