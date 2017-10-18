@@ -35,7 +35,6 @@ public class Application {
 
 	public static void inserDataIntoElasticsearch() {
 		ArrayList<String> data = new ArrayList<String>();
-		// Reading current test number and writing the next one.
 		Integer testNo = 0;
 		try {
 			File f = new File("testno.txt");
@@ -54,7 +53,6 @@ public class Application {
 			e.printStackTrace();
 		}
 		testNo -= 1;
-		// Reading all log.txt content.
 		try {
 			File f = new File("log.txt");
 			BufferedReader br = new BufferedReader(new FileReader(f));
@@ -66,49 +64,34 @@ public class Application {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		data.add("[INFO] Finishing unit test number " + testNo + "...");
 		Integer i = 0;
-		// Till last [INFO] message.
-		System.out.println("TILL LAST [INFO] MESSAGE");
 		while (data.get(0).indexOf("-") != 0) {
-			System.out.println(data.get(0));
 			String[] args = getArgsNormal(data.get(0));
 			Log log = new Log(i.toString(), data.get(0), args[0], args[1]);
 			service.save(log);
 			data.remove(0);
 			i++;
 		}
-		// Till First Running menssage.
-		System.out.println("TILL RUNNING MESSAGE");
 		while (data.get(0).indexOf("2") != 0) {
-			System.out.println(data.get(0));
 			Log log = new Log(i.toString(), data.get(0), data.get(0));
 			service.save(log);
 			data.remove(0);
 			i++;
 		}
-		// Till last JUnit log message.
-		System.out.println("TILL LAST JUNIT LOG MESSAGE");
 		while (data.get(0).indexOf("T") != 0) {
 			String[] args = getArgsLogback(data.get(0));
-			System.out.println(data.get(0));
 			Log log = new Log(i.toString(), data.get(0), args[0], args[1], args[2], args[3], args[4]);
 			service.save(log);
 			data.remove(0);
 			i++;
 		}
-		// Till First [INFO] menssage.
-		System.out.println("TILL FIRST [INFO] MESSAGE");
 		while (data.get(0).indexOf("[") != 0) {
-			System.out.println(data.get(0));
 			Log log = new Log(i.toString(), data.get(0), data.get(0));
 			service.save(log);
 			data.remove(0);
 			i++;
 		}
-		System.out.println("LAST [INFO] MESSAGES");
 		while (!data.isEmpty()) {
-			System.out.println(data.get(0));
 			String[] args = getArgsNormal(data.get(0));
 			Log log = new Log(i.toString(), data.get(0), args[0], args[1]);
 			service.save(log);
