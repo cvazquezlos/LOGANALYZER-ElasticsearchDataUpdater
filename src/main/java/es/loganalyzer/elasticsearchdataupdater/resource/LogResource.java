@@ -29,7 +29,7 @@ public class LogResource {
 	}
 
 	@RequestMapping(method = RequestMethod.GET, path = "/{id}")
-	public Log getLog(@PathVariable String id) {
+	public Log getLog(@PathVariable Integer id) {
 		return esLogService.findOne(id);
 	}
 
