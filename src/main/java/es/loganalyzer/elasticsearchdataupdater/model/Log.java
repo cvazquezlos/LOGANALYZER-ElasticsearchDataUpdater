@@ -2,13 +2,12 @@ package es.loganalyzer.elasticsearchdataupdater.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
-import org.springframework.data.elasticsearch.annotations.Field;
 
 @Document(indexName = "loganalyzer", type = "logs")
 public class Log {
 
 	@Id
-	private String id;
+	private Integer id;
 
 	private String entireLog;
 	private String timestamp;
@@ -20,7 +19,7 @@ public class Log {
 	public Log() {
 	}
 
-	public Log(String id, String entireLog) {
+	public Log(Integer id, String entireLog) {
 		this.id = id;
 		this.entireLog = entireLog;
 		this.timestamp = "-";
@@ -30,7 +29,7 @@ public class Log {
 		this.formattedMessage = "-";
 	}
 
-	public Log(String id, String entireLog, String level, String formattedMessage) {
+	public Log(Integer id, String entireLog, String level, String formattedMessage) {
 		this.id = id;
 		this.entireLog = entireLog;
 		this.timestamp = "-";
@@ -40,7 +39,7 @@ public class Log {
 		this.formattedMessage = formattedMessage;
 	}
 
-	public Log(String id, String entireLog, String formattedMessage) {
+	public Log(Integer id, String entireLog, String formattedMessage) {
 		this.id = id;
 		this.entireLog = entireLog;
 		this.timestamp = "-";
@@ -50,7 +49,7 @@ public class Log {
 		this.formattedMessage = formattedMessage;
 	}
 
-	public Log(String id, String entireLog, String timeStamp, String threadName, String level, String loggerName,
+	public Log(Integer id, String entireLog, String timeStamp, String threadName, String level, String loggerName,
 			String formattedMessage) {
 		this.id = id;
 		this.entireLog = entireLog;
@@ -61,11 +60,11 @@ public class Log {
 		this.formattedMessage = formattedMessage;
 	}
 
-	public String getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 

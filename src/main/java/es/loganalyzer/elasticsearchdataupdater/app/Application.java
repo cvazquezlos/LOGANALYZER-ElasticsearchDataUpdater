@@ -67,53 +67,73 @@ public class Application {
 			e.printStackTrace();
 		}
 		data.add("[INFO] Finishing unit test number " + testNo + "...");
-		Integer i = 0;
+		Integer id = 0;
+		// Reading id number.
+		try {
+			File f = new File("idno.txt");
+			BufferedReader br = new BufferedReader(new FileReader(f));
+			String line = "";
+			while ((line = br.readLine()) != null) {
+				id = Integer.valueOf(line);
+			}
+			br.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		// Till last [INFO] message.
 		System.out.println("TILL LAST [INFO] MESSAGE");
 		while (data.get(0).indexOf("-") != 0) {
 			System.out.println(data.get(0));
 			String[] args = getArgsNormal(data.get(0));
-			Log log = new Log(i.toString(), data.get(0), args[0], args[1]);
+			Log log = new Log(id, data.get(0), args[0], args[1]);
 			service.save(log);
 			data.remove(0);
-			i++;
+			id++;
 		}
 		// Till First Running menssage.
 		System.out.println("TILL RUNNING MESSAGE");
 		while (data.get(0).indexOf("2") != 0) {
 			System.out.println(data.get(0));
-			Log log = new Log(i.toString(), data.get(0), data.get(0));
+			Log log = new Log(id, data.get(0), data.get(0));
 			service.save(log);
 			data.remove(0);
-			i++;
+			id++;
 		}
 		// Till last JUnit log message.
 		System.out.println("TILL LAST JUNIT LOG MESSAGE");
 		while (data.get(0).indexOf("T") != 0) {
 			String[] args = getArgsLogback(data.get(0));
 			System.out.println(data.get(0));
-			Log log = new Log(i.toString(), data.get(0), args[0], args[1], args[2], args[3], args[4]);
+			Log log = new Log(id, data.get(0), args[0], args[1], args[2], args[3], args[4]);
 			service.save(log);
 			data.remove(0);
-			i++;
+			id++;
 		}
 		// Till First [INFO] menssage.
 		System.out.println("TILL FIRST [INFO] MESSAGE");
 		while (data.get(0).indexOf("[") != 0) {
 			System.out.println(data.get(0));
-			Log log = new Log(i.toString(), data.get(0), data.get(0));
+			Log log = new Log(id, data.get(0), data.get(0));
 			service.save(log);
 			data.remove(0);
-			i++;
+			id++;
 		}
 		System.out.println("LAST [INFO] MESSAGES");
 		while (!data.isEmpty()) {
 			System.out.println(data.get(0));
 			String[] args = getArgsNormal(data.get(0));
-			Log log = new Log(i.toString(), data.get(0), args[0], args[1]);
+			Log log = new Log(id, data.get(0), args[0], args[1]);
 			service.save(log);
 			data.remove(0);
-			i++;
+			id++;
+		}
+		try {
+			File f = new File("idno.txt");
+			BufferedWriter bw = new BufferedWriter(new FileWriter(f));
+			bw.write(id.toString());
+			bw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 
