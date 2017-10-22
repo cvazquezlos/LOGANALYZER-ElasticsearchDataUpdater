@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import es.loganalyzer.elasticsearchdataupdater.model.Log;
 
 @Repository
-public interface LogRepository extends ElasticsearchCrudRepository<Log, Integer> {
+public interface LogRepository extends ElasticsearchCrudRepository<Log, String> {
 
     @Query("{\"bool\":{\"filter\":{\"timestamp\":\"?0\"}}}")
     Page<Log> findByTimestamp(String timestamp, Pageable pageable);

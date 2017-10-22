@@ -7,7 +7,7 @@ import org.springframework.data.elasticsearch.annotations.Document;
 public class Log {
 
 	@Id
-	private Integer id;
+	private String id;
 
 	private String entireLog;
 	private String timestamp;
@@ -19,7 +19,7 @@ public class Log {
 	public Log() {
 	}
 
-	public Log(Integer id, String entireLog) {
+	public Log(String id, String entireLog) {
 		this.id = id;
 		this.entireLog = entireLog;
 		this.timestamp = "-";
@@ -29,7 +29,7 @@ public class Log {
 		this.formattedMessage = "-";
 	}
 
-	public Log(Integer id, String entireLog, String level, String formattedMessage) {
+	public Log(String id, String entireLog, String level, String formattedMessage) {
 		this.id = id;
 		this.entireLog = entireLog;
 		this.timestamp = "-";
@@ -39,7 +39,7 @@ public class Log {
 		this.formattedMessage = formattedMessage;
 	}
 
-	public Log(Integer id, String entireLog, String formattedMessage) {
+	public Log(String id, String entireLog, String formattedMessage) {
 		this.id = id;
 		this.entireLog = entireLog;
 		this.timestamp = "-";
@@ -49,7 +49,7 @@ public class Log {
 		this.formattedMessage = formattedMessage;
 	}
 
-	public Log(Integer id, String entireLog, String timeStamp, String threadName, String level, String loggerName,
+	public Log(String id, String entireLog, String timeStamp, String threadName, String level, String loggerName,
 			String formattedMessage) {
 		this.id = id;
 		this.entireLog = entireLog;
@@ -60,11 +60,11 @@ public class Log {
 		this.formattedMessage = formattedMessage;
 	}
 
-	public Integer getId() {
+	public String getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
