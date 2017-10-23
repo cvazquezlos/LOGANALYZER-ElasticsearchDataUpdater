@@ -30,11 +30,11 @@ public class ESLogService {
 		return repository.findByTimestamp(timestamp, new PageRequest(page, size)).getContent();
 	}
 	
-	public Log findOne(Integer id) {
+	public Log findOne(String id) {
 		return repository.findOne(id);
 	}
 
-	public Integer save(Log log) {
+	public String save(Log log) {
 		return repository.save(log).getId();
 	}
 }

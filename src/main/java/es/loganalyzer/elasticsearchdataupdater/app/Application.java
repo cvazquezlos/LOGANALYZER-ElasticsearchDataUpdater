@@ -65,65 +65,58 @@ public class Application {
 			e.printStackTrace();
 		}
 		data.add("[INFO] Finishing unit test number " + testNo + "...");
-		Integer id = 0;
-		// Reading id number.
-		try {
-			File f = new File("idno.txt");
-			BufferedReader br = new BufferedReader(new FileReader(f));
-			String line = "";
-			while ((line = br.readLine()) != null) {
-				id = Integer.valueOf(line);
-			}
-			br.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		Integer identificator = readIntegerContent("idno.txt");
 		// Till last [INFO] message.
 		System.out.println("TILL LAST [INFO] MESSAGE");
 		while (data.get(0).indexOf("-") != 0) {
+			String id = String.format("%04d", identificator);
+			System.out.println(id);
 			String[] args = getArgsNormal(data.get(0));
 			Log log = new Log(id, data.get(0), args[0], args[1]);
-			service.save(log);
+			//service.save(log);
 			data.remove(0);
-			id++;
+			identificator++;
 		}
 		while (data.get(0).indexOf("2") != 0) {
+			String id = String.format("%04d", identificator);
+			System.out.println(id);
 			System.out.println(data.get(0));
 			Log log = new Log(id, data.get(0), data.get(0));
-			service.save(log);
+			//service.save(log);
 			data.remove(0);
-			id++;
+			identificator++;
 		}
 		while (data.get(0).indexOf("T") != 0) {
+			String id = String.format("%04d", identificator);
+			System.out.println(id);
 			String[] args = getArgsLogback(data.get(0));
 			System.out.println(data.get(0));
 			Log log = new Log(id, data.get(0), args[0], args[1], args[2], args[3], args[4]);
-			service.save(log);
+			//service.save(log);
 			data.remove(0);
-			id++;
+			identificator++;
 		}
 		while (data.get(0).indexOf("[") != 0) {
+			String id = String.format("%04d", identificator);
+			System.out.println(id);
 			System.out.println(data.get(0));
 			Log log = new Log(id, data.get(0), data.get(0));
-			service.save(log);
+			//service.save(log);
 			data.remove(0);
-			id++;
+			identificator++;
 		}
 		while (!data.isEmpty()) {
+			String id = String.format("%04d", identificator);
+			System.out.println(id);
 			String[] args = getArgsNormal(data.get(0));
 			Log log = new Log(id, data.get(0), args[0], args[1]);
-			service.save(log);
+			//service.save(log);
 			data.remove(0);
-			id++;
+			identificator++;
 		}
-		try {
-			File f = new File("idno.txt");
-			BufferedWriter bw = new BufferedWriter(new FileWriter(f));
-			bw.write(id.toString());
-			bw.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		String id = String.format("%04d", identificator);
+		System.out.println(id);
+		writeContent("idno.txt", id);
 	}
 
 	private static String[] getArgsLogback(String string) {
@@ -154,11 +147,38 @@ public class Application {
 		}
 		return args;
 	}
+	
+	private static Integer readIntegerContent(String file) {
+		Integer content = 0;
+		try {
+			File f = new File(file);
+			BufferedReader br = new BufferedReader(new FileReader(f));
+			String line = "";
+			while ((line = br.readLine()) != null) {
+				content = Integer.valueOf(line);
+			}
+			br.close();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return content;
+	}
 
 	private static void resetIndex() {
 		Iterable<Log> savedLogs = service.findAll();
 		for (Log log : savedLogs) {
 			service.delete(log);
+		}
+	}
+	
+	private static void writeContent(String file, String content) {
+		try {
+			File f = new File(file);
+			BufferedWriter bw = new BufferedWriter(new FileWriter(f));
+			bw.write(content);
+			bw.close();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 }
