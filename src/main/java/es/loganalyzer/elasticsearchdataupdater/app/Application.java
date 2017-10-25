@@ -46,7 +46,8 @@ public class Application {
 			data.add(0, "[INFO] Building project and starting unit test number " + testNo + "...");
 			testNo += 1;
 			BufferedWriter bw = new BufferedWriter(new FileWriter(f));
-			bw.write(testNo.toString());
+			String testNumber = String.format("%02d", testNo);
+			bw.write(testNumber);
 			br.close();
 			bw.close();
 		} catch (IOException e) {
