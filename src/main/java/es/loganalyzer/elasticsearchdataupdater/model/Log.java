@@ -9,6 +9,7 @@ public class Log {
 	@Id
 	private String id;
 
+	private String testNo;
 	private String entireLog;
 	private String timestamp;
 	private String threadName;
@@ -19,8 +20,9 @@ public class Log {
 	public Log() {
 	}
 
-	public Log(String id, String entireLog) {
+	public Log(String id, String testNo, String entireLog) {
 		this.id = id;
+		this.testNo = testNo;
 		this.entireLog = entireLog;
 		this.timestamp = "-";
 		this.threadName = "-";
@@ -29,8 +31,9 @@ public class Log {
 		this.formattedMessage = "-";
 	}
 
-	public Log(String id, String entireLog, String level, String formattedMessage) {
+	public Log(String id, String testNo, String entireLog, String level, String formattedMessage) {
 		this.id = id;
+		this.testNo = testNo;
 		this.entireLog = entireLog;
 		this.timestamp = "-";
 		this.threadName = "-";
@@ -39,8 +42,9 @@ public class Log {
 		this.formattedMessage = formattedMessage;
 	}
 
-	public Log(String id, String entireLog, String formattedMessage) {
+	public Log(String id, String testNo, String entireLog, String formattedMessage) {
 		this.id = id;
+		this.testNo = testNo;
 		this.entireLog = entireLog;
 		this.timestamp = "-";
 		this.threadName = "-";
@@ -49,9 +53,10 @@ public class Log {
 		this.formattedMessage = formattedMessage;
 	}
 
-	public Log(String id, String entireLog, String timeStamp, String threadName, String level, String loggerName,
-			String formattedMessage) {
+	public Log(String id, String testNo, String entireLog, String timeStamp, String threadName, String level, 
+			String loggerName, String formattedMessage) {
 		this.id = id;
+		this.testNo = testNo;
 		this.entireLog = entireLog;
 		this.timestamp = timeStamp;
 		this.threadName = threadName;
@@ -66,6 +71,14 @@ public class Log {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public String getTestNo() {
+		return testNo;
+	}
+
+	public void setTestNo(String testNo) {
+		this.testNo = testNo;
 	}
 
 	public String getEntireLog() {
@@ -120,6 +133,6 @@ public class Log {
 	public String toString() {
 		return "Log{" + "entireLog='" + entireLog + '\'' + ", timeStamp='" + timestamp + '\'' + ", threadName='"
 				+ threadName + '\'' + ", level='" + level + '\'' + ", loggerName='" + loggerName + '\''
-				+ ", formattedMessage='" + formattedMessage + '\'' + '}';
+				+ ", formattedMessage='" + formattedMessage + '\'' + ", testNo='" + testNo + "\'}";
 	}
 }

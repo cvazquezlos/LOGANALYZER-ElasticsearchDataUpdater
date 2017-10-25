@@ -65,6 +65,7 @@ public class Application {
 			e.printStackTrace();
 		}
 		data.add("[INFO] Finishing unit test number " + testNo + "...");
+		String testNumber = String.format("%02d", testNo);
 		Integer identificator = readIntegerContent("idno.txt");
 		// Till last [INFO] message.
 		System.out.println("TILL LAST [INFO] MESSAGE");
@@ -72,8 +73,8 @@ public class Application {
 			String id = String.format("%04d", identificator);
 			System.out.println(id);
 			String[] args = getArgsNormal(data.get(0));
-			Log log = new Log(id, data.get(0), args[0], args[1]);
-			//service.save(log);
+			Log log = new Log(id, testNumber, data.get(0), args[0], args[1]);
+			service.save(log);
 			data.remove(0);
 			identificator++;
 		}
@@ -81,8 +82,8 @@ public class Application {
 			String id = String.format("%04d", identificator);
 			System.out.println(id);
 			System.out.println(data.get(0));
-			Log log = new Log(id, data.get(0), data.get(0));
-			//service.save(log);
+			Log log = new Log(id, testNumber, data.get(0), data.get(0));
+			service.save(log);
 			data.remove(0);
 			identificator++;
 		}
@@ -91,8 +92,8 @@ public class Application {
 			System.out.println(id);
 			String[] args = getArgsLogback(data.get(0));
 			System.out.println(data.get(0));
-			Log log = new Log(id, data.get(0), args[0], args[1], args[2], args[3], args[4]);
-			//service.save(log);
+			Log log = new Log(id, testNumber, data.get(0), args[0], args[1], args[2], args[3], args[4]);
+			service.save(log);
 			data.remove(0);
 			identificator++;
 		}
@@ -100,8 +101,8 @@ public class Application {
 			String id = String.format("%04d", identificator);
 			System.out.println(id);
 			System.out.println(data.get(0));
-			Log log = new Log(id, data.get(0), data.get(0));
-			//service.save(log);
+			Log log = new Log(id, testNumber, data.get(0), data.get(0));
+			service.save(log);
 			data.remove(0);
 			identificator++;
 		}
@@ -109,8 +110,8 @@ public class Application {
 			String id = String.format("%04d", identificator);
 			System.out.println(id);
 			String[] args = getArgsNormal(data.get(0));
-			Log log = new Log(id, data.get(0), args[0], args[1]);
-			//service.save(log);
+			Log log = new Log(id, testNumber, data.get(0), args[0], args[1]);
+			service.save(log);
 			data.remove(0);
 			identificator++;
 		}
