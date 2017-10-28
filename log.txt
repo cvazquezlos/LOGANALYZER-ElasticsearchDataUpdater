@@ -31,25 +31,25 @@
  T E S T S
 -------------------------------------------------------
 Running es.loganalyzer.springloggenerator.PasswordGeneratorTest
-2017-10-21 19:27:03.027 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. secLevel must have an int value in gradeLevel variable.
-2017-10-21 19:27:03.087 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. secLevel must have an int value in gradeLevel variable.
-2017-10-21 19:27:03.151 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. First condition. numChat must contain a valid int value.
-2017-10-21 19:27:03.151 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Second condition. secLevel must contain a valid String value.
-2017-10-21 19:27:03.152 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Third condition. specialChar must contain a valid boolean value.
-2017-10-21 19:27:03.189 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Fourth condition. numbers must contain a valid boolean value.
-2017-10-21 19:27:03.189 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Fifth condition. wantRepeated must contain a valid boolean value.
-2017-10-21 19:27:03.190 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Sixth condition. regionChar must contain a valid String value.
-2017-10-21 19:27:03.190 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. First condition. numChat must contain a valid int value.
-2017-10-21 19:27:03.190 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Second condition. secLevel must contain a valid String value.
-2017-10-21 19:27:03.190 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Third condition. specialChar must contain a valid boolean value.
-2017-10-21 19:27:03.190 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Fourth condition. numbers must contain a valid boolean value.
-2017-10-21 19:27:03.191 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Fifth condition. wantRepeated must contain a valid boolean value.
-2017-10-21 19:27:03.191 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Sixth condition. regionChar must contain a valid String value.
-2017-10-21 19:27:03.246 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. regionChars must contain US / UK regional chars.
-2017-10-21 19:27:03.246 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. regionChars must contain SP regional chars.
-2017-10-21 19:27:03.294 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Password generated and its value is h4rl97ejs61A.
-2017-10-21 19:27:03.295 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Password generated and its value is }70]h276.
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.443 sec - in es.loganalyzer.springloggenerator.PasswordGeneratorTest
+2017-10-27 16:11:49.585 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. secLevel must have an int value in gradeLevel variable.
+2017-10-27 16:11:49.663 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. secLevel must have an int value in gradeLevel variable.
+2017-10-27 16:11:49.734 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. First condition. numChat must contain a valid int value.
+2017-10-27 16:11:49.735 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Second condition. secLevel must contain a valid String value.
+2017-10-27 16:11:49.735 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Third condition. specialChar must contain a valid boolean value.
+2017-10-27 16:11:49.752 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Fourth condition. numbers must contain a valid boolean value.
+2017-10-27 16:11:49.753 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Fifth condition. wantRepeated must contain a valid boolean value.
+2017-10-27 16:11:49.753 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Sixth condition. regionChar must contain a valid String value.
+2017-10-27 16:11:49.753 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. First condition. numChat must contain a valid int value.
+2017-10-27 16:11:49.753 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Second condition. secLevel must contain a valid String value.
+2017-10-27 16:11:49.753 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Third condition. specialChar must contain a valid boolean value.
+2017-10-27 16:11:49.753 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Fourth condition. numbers must contain a valid boolean value.
+2017-10-27 16:11:49.754 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Fifth condition. wantRepeated must contain a valid boolean value.
+2017-10-27 16:11:49.754 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Sixth condition. regionChar must contain a valid String value.
+2017-10-27 16:11:49.809 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. regionChars must contain US / UK regional chars.
+2017-10-27 16:11:49.809 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. regionChars must contain SP regional chars.
+2017-10-27 16:11:49.983 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester. Password generated and its value is R17d4p295taY.
+2017-10-27 16:11:49.983 [main] INFO  es.loganalyzer.springloggenerator.PasswordGeneratorTest - Tester2. Password generated and its value is ~v07D7$l.
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.73 sec - in es.loganalyzer.springloggenerator.PasswordGeneratorTest
 
 Results :
 
@@ -65,7 +65,7 @@ Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 20.198 s
-[INFO] Finished at: 2017-10-21T19:27:04+02:00
-[INFO] Final Memory: 26M/139M
+[INFO] Total time: 32.373 s
+[INFO] Finished at: 2017-10-27T16:11:51+02:00
+[INFO] Final Memory: 26M/120M
 [INFO] ------------------------------------------------------------------------
