@@ -9,60 +9,60 @@ public class Log {
 	@Id
 	private String id;
 
-	private String testNo;
-	private String entireLog;
+	private String test_no;
+	private String entire_log;
 	private String timestamp;
-	private String threadName;
+	private String thread_name;
 	private String level;
-	private String loggerName;
-	private String formattedMessage;
+	private String logger_name;
+	private String formatted_message;
 
 	public Log() {
 	}
 
-	public Log(String id, String testNo, String entireLog) {
+	public Log(String id, String test_no, String entire_log) {
 		this.id = id;
-		this.testNo = testNo;
-		this.entireLog = entireLog;
+		this.test_no = test_no;
+		this.entire_log = entire_log;
 		this.timestamp = "-";
-		this.threadName = "-";
+		this.thread_name = "-";
 		this.level = "-";
-		this.loggerName = "-";
-		this.formattedMessage = "-";
+		this.logger_name = "-";
+		this.formatted_message = "-";
 	}
 
-	public Log(String id, String testNo, String entireLog, String level, String formattedMessage) {
+	public Log(String id, String test_no, String entire_log, String level, String formatted_message) {
 		this.id = id;
-		this.testNo = testNo;
-		this.entireLog = entireLog;
+		this.test_no = test_no;
+		this.entire_log = entire_log;
 		this.timestamp = "-";
-		this.threadName = "-";
+		this.thread_name = "-";
 		this.level = level;
-		this.loggerName = "-";
-		this.formattedMessage = formattedMessage;
+		this.logger_name = "-";
+		this.formatted_message = formatted_message;
 	}
 
-	public Log(String id, String testNo, String entireLog, String formattedMessage) {
+	public Log(String id, String test_no, String entire_log, String formatted_message) {
 		this.id = id;
-		this.testNo = testNo;
-		this.entireLog = entireLog;
+		this.test_no = test_no;
+		this.entire_log = entire_log;
 		this.timestamp = "-";
-		this.threadName = "-";
+		this.thread_name = "-";
 		this.level = "-";
-		this.loggerName = "-";
-		this.formattedMessage = formattedMessage;
+		this.logger_name = "-";
+		this.formatted_message = formatted_message;
 	}
 
-	public Log(String id, String testNo, String entireLog, String timeStamp, String threadName, String level, 
-			String loggerName, String formattedMessage) {
+	public Log(String id, String test_no, String entire_log, String timestamp, String thread_name, String level,
+			String logger_name, String formatted_message) {
 		this.id = id;
-		this.testNo = testNo;
-		this.entireLog = entireLog;
-		this.timestamp = timeStamp;
-		this.threadName = threadName;
+		this.test_no = test_no;
+		this.entire_log = entire_log;
+		this.timestamp = timestamp;
+		this.thread_name = thread_name;
 		this.level = level;
-		this.loggerName = loggerName;
-		this.formattedMessage = formattedMessage;
+		this.logger_name = logger_name;
+		this.formatted_message = formatted_message;
 	}
 
 	public String getId() {
@@ -74,19 +74,19 @@ public class Log {
 	}
 
 	public String getTestNo() {
-		return testNo;
+		return test_no;
 	}
 
-	public void setTestNo(String testNo) {
-		this.testNo = testNo;
+	public void setTestNo(String test_no) {
+		this.test_no = test_no;
 	}
 
 	public String getEntireLog() {
-		return entireLog;
+		return entire_log;
 	}
 
-	public void setEntireLog(String entireLog) {
-		this.entireLog = entireLog;
+	public void setEntireLog(String entire_log) {
+		this.entire_log = entire_log;
 	}
 
 	public String getTimestamp() {
@@ -98,11 +98,11 @@ public class Log {
 	}
 
 	public String getThreadName() {
-		return threadName;
+		return thread_name;
 	}
 
-	public void setThreadName(String threadName) {
-		this.threadName = threadName;
+	public void setThreadName(String thread_name) {
+		this.thread_name = thread_name;
 	}
 
 	public String getLevel() {
@@ -114,25 +114,25 @@ public class Log {
 	}
 
 	public String getLoggerName() {
-		return loggerName;
+		return logger_name;
 	}
 
-	public void setLoggerName(String loggerName) {
-		this.loggerName = loggerName;
+	public void setLoggerName(String logger_name) {
+		this.logger_name = logger_name;
 	}
 
 	public String getFormattedMessage() {
-		return formattedMessage;
+		return formatted_message;
 	}
 
-	public void setFormattedMessage(String formattedMessage) {
-		this.formattedMessage = formattedMessage;
+	public void setFormattedMessage(String formatted_message) {
+		this.formatted_message = formatted_message;
 	}
 
 	@Override
 	public String toString() {
-		return "Log{" + "entireLog='" + entireLog + '\'' + ", timeStamp='" + timestamp + '\'' + ", threadName='"
-				+ threadName + '\'' + ", level='" + level + '\'' + ", loggerName='" + loggerName + '\''
-				+ ", formattedMessage='" + formattedMessage + '\'' + ", testNo='" + testNo + "\'}";
+		return "Log{" + "entire_log='" + entire_log + '\'' + ", timestamp='" + timestamp + '\'' + ", thread_name='"
+				+ thread_name + '\'' + ", level='" + level + '\'' + ", logger_name='" + logger_name + '\''
+				+ ", formatted_message='" + formatted_message + '\'' + ", test_no='" + test_no + "\'}";
 	}
 }
