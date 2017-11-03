@@ -73,19 +73,19 @@ public class Log {
 		this.id = id;
 	}
 
-	public String getTestNo() {
+	public String getTest_no() {
 		return test_no;
 	}
 
-	public void setTestNo(String test_no) {
+	public void setTest_no(String test_no) {
 		this.test_no = test_no;
 	}
 
-	public String getEntireLog() {
+	public String getEntire_log() {
 		return entire_log;
 	}
 
-	public void setEntireLog(String entire_log) {
+	public void setEntire_log(String entire_log) {
 		this.entire_log = entire_log;
 	}
 
@@ -97,11 +97,11 @@ public class Log {
 		this.timestamp = timestamp;
 	}
 
-	public String getThreadName() {
+	public String getThread_name() {
 		return thread_name;
 	}
 
-	public void setThreadName(String thread_name) {
+	public void setThread_name(String thread_name) {
 		this.thread_name = thread_name;
 	}
 
@@ -113,19 +113,19 @@ public class Log {
 		this.level = level;
 	}
 
-	public String getLoggerName() {
+	public String getLogger_name() {
 		return logger_name;
 	}
 
-	public void setLoggerName(String logger_name) {
+	public void setLogger_name(String logger_name) {
 		this.logger_name = logger_name;
 	}
 
-	public String getFormattedMessage() {
+	public String getFormatted_message() {
 		return formatted_message;
 	}
 
-	public void setFormattedMessage(String formatted_message) {
+	public void setFormatted_message(String formatted_message) {
 		this.formatted_message = formatted_message;
 	}
 
