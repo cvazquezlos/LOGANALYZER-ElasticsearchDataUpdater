@@ -68,56 +68,66 @@ public class Application {
 		data.add("[INFO] Finishing unit test number " + testNo + "...");
 		String testNumber = String.format("%02d", testNo);
 		Integer identificator = readIntegerContent("idno.txt");
-		// Till last [INFO] message.
-		System.out.println("TILL LAST [INFO] MESSAGE");
-		while (data.get(0).indexOf("-") != 0) {
+		// Just before first -------------------- line.
+		while (data.get(0).indexOf("[") == 0) {
 			String id = String.format("%04d", identificator);
-			System.out.println(id);
 			String[] args = getArgsNormal(data.get(0));
 			Log log = new Log(id, testNumber, data.get(0), args[0], args[1]);
 			service.save(log);
+			System.out.println(data.get(0));
 			data.remove(0);
 			identificator++;
 		}
-		while (data.get(0).indexOf("2") != 0) {
+		// Just before first Running com.... line.
+		while (data.get(0).indexOf("R") != 0) {
 			String id = String.format("%04d", identificator);
-			System.out.println(id);
-			System.out.println(data.get(0));
 			Log log = new Log(id, testNumber, data.get(0), data.get(0));
 			service.save(log);
+			System.out.println(data.get(0));
 			data.remove(0);
 			identificator++;
 		}
-		while (data.get(0).indexOf("T") != 0) {
-			String id = String.format("%04d", identificator);
-			System.out.println(id);
-			String[] args = getArgsLogback(data.get(0));
-			System.out.println(data.get(0));
-			Log log = new Log(id, testNumber, data.get(0), args[0], args[1], args[2], args[3], args[4]);
-			service.save(log);
-			data.remove(0);
-			identificator++;
-		}
-		while (data.get(0).indexOf("[") != 0) {
-			String id = String.format("%04d", identificator);
-			System.out.println(id);
-			System.out.println(data.get(0));
-			Log log = new Log(id, testNumber, data.get(0), data.get(0));
-			service.save(log);
-			data.remove(0);
-			identificator++;
+		// ALL WORKING PROPERLY TILL HERE.
+		String method = "";
+		while (data.get(0).length() != 0) {
+			if (data.get(0).indexOf("S") == 0) {
+				String id = String.format("%04d", identificator);
+				Log log = new Log(id, testNumber, data.get(0), data.get(0));
+				service.save(log);
+				System.out.println(data.get(0));
+				method = data.get(0).split(" ")[1];
+				data.remove(0);
+				identificator++;
+			} else if (data.get(0).indexOf("2") == 0) {
+				String id = String.format("%04d", identificator);
+				String[] args = getArgsLogback(data.get(0));
+				Log log = new Log(id, testNumber, data.get(0), method, args[0], args[1], args[2], args[3], args[4]);
+				service.save(log);
+				System.out.println(data.get(0));
+				data.remove(0);
+				identificator++;
+			} else if (data.get(0).indexOf("[") == 0) {
+				data.remove(0);
+			} else {				
+				method = "-";
+				String id = String.format("%04d", identificator);
+				Log log = new Log(id, testNumber, data.get(0), data.get(0));
+				service.save(log);
+				System.out.println(data.get(0));
+				data.remove(0);
+				identificator++;
+			}
 		}
 		while (!data.isEmpty()) {
 			String id = String.format("%04d", identificator);
-			System.out.println(id);
 			String[] args = getArgsNormal(data.get(0));
 			Log log = new Log(id, testNumber, data.get(0), args[0], args[1]);
 			service.save(log);
+			System.out.println(data.get(0));
 			data.remove(0);
 			identificator++;
 		}
 		String id = String.format("%04d", identificator);
-		System.out.println(id);
 		writeContent("idno.txt", id);
 	}
 

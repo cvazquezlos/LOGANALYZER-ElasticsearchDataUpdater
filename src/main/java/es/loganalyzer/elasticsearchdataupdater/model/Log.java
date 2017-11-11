@@ -11,6 +11,7 @@ public class Log {
 
 	private String test_no;
 	private String entire_log;
+	private String method;
 	private String timestamp;
 	private String thread_name;
 	private String level;
@@ -24,6 +25,7 @@ public class Log {
 		this.id = id;
 		this.test_no = test_no;
 		this.entire_log = entire_log;
+		this.method = "-";
 		this.timestamp = "-";
 		this.thread_name = "-";
 		this.level = "-";
@@ -35,6 +37,7 @@ public class Log {
 		this.id = id;
 		this.test_no = test_no;
 		this.entire_log = entire_log;
+		this.method = "-";
 		this.timestamp = "-";
 		this.thread_name = "-";
 		this.level = level;
@@ -46,6 +49,7 @@ public class Log {
 		this.id = id;
 		this.test_no = test_no;
 		this.entire_log = entire_log;
+		this.method = "-";
 		this.timestamp = "-";
 		this.thread_name = "-";
 		this.level = "-";
@@ -53,11 +57,12 @@ public class Log {
 		this.formatted_message = formatted_message;
 	}
 
-	public Log(String id, String test_no, String entire_log, String timestamp, String thread_name, String level,
+	public Log(String id, String test_no, String entire_log, String method, String timestamp, String thread_name, String level,
 			String logger_name, String formatted_message) {
 		this.id = id;
 		this.test_no = test_no;
 		this.entire_log = entire_log;
+		this.method = method;
 		this.timestamp = timestamp;
 		this.thread_name = thread_name;
 		this.level = level;
@@ -87,6 +92,14 @@ public class Log {
 
 	public void setEntire_log(String entire_log) {
 		this.entire_log = entire_log;
+	}
+
+	public String getMethod() {
+		return method;
+	}
+
+	public void setMethod(String method) {
+		this.method = method;
 	}
 
 	public String getTimestamp() {
