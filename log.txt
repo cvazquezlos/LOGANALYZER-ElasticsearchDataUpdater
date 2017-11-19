@@ -33,124 +33,124 @@
 -------------------------------------------------------
 Running com.example.bookstore.basic.BasicUnitTest
 Starting testDeleteQuery() method test...
-2017-11-12 15:17:32.956 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database must contain target value.
-2017-11-12 15:17:32.963 [main] INFO  com.example.bookstore.basic.BasicUnitTest - After deleting info, database size have to be 19.
-2017-11-12 15:17:32.964 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database can't contain target value.
+2017-11-19 00:24:43.881 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database must contain any target value.
+2017-11-19 00:24:43.886 [main] INFO  com.example.bookstore.basic.BasicUnitTest - After deleting info, database size have to be 19.
+2017-11-19 00:24:43.887 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database can't contain target value.
 testDeleteQuery() method test finished...
 Starting testAddQuery() method test...
-2017-11-12 15:17:32.965 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database can't contain target value.
-2017-11-12 15:17:32.965 [main] INFO  com.example.bookstore.basic.BasicUnitTest - After adding info, database size have to be 21.
-2017-11-12 15:17:32.966 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database must contain target value.
+2017-11-19 00:24:43.888 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database can't contain target value.
+2017-11-19 00:24:43.888 [main] INFO  com.example.bookstore.basic.BasicUnitTest - After adding info, database size have to be 21.
+2017-11-19 00:24:43.888 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database must contain target value.
 testAddQuery() method test finished...
 Starting testFindQuery() method test...
-2017-11-12 15:17:32.967 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database must find target value.
+2017-11-19 00:24:43.889 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database must find target value.
 testFindQuery() method test finished...
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.67 sec
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.812 sec
 Running com.example.bookstore.repository.JpaBookRepositoryTest
 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5136d012, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5939a379, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e1de817, org.springframework.test.context.transaction.TransactionalTestExecutionListener@52102734, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3541cb24]
-[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@732c2a62: startup date [Sun Nov 12 15:17:34 CET 2017]; root of context hierarchy
+[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@732c2a62: startup date [Sun Nov 19 00:24:44 CET 2017]; root of context hierarchy
 [main] INFO org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Skipping bean definition for [BeanMethod:name=accountRepository,declaringClass=com.example.bookstore.service.AccountServiceTest$AccountServiceTestContextConfiguration]: a definition for bean 'accountRepository' already exists. This top-level bean definition is considered as an override.
 [main] INFO org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory - Creating embedded database 'testdb'
 [main] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookstore'
-2017-11-12 15:17:36 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
-2017-11-12 15:17:36 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.1.9.Final}
-2017-11-12 15:17:36 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
-2017-11-12 15:17:36 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
-2017-11-12 15:17:36 [main] INFO  org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+2017-11-19 00:24:45 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2017-11-19 00:24:45 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.1.9.Final}
+2017-11-19 00:24:45 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-11-19 00:24:45 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-11-19 00:24:45 [main] INFO  org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
 	name: bookstore
 	...]
-2017-11-12 15:17:37 [main] INFO  org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
-2017-11-12 15:17:37 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2017-11-12 15:17:37 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
-2017-11-12 15:17:37 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
-2017-11-12 15:17:38 [main] INFO  org.hibernate.cache.spi.UpdateTimestampsCache - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
-2017-11-12 15:17:38 [main] WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
-2017-11-12 15:17:38 [main] INFO  org.hibernate.cache.internal.StandardQueryCache - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
-2017-11-12 15:17:38 [main] WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
-2017-11-12 15:17:38 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.0.Final
-2017-11-12 15:17:39 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
-2017-11-12 15:17:39 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
-2017-11-12 15:17:39 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account_Role
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Book
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Category
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: OrderDetail
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Permission
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role_Permission
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: orders
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account_Role
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Book
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Category
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: OrderDetail
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Permission
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role_Permission
-2017-11-12 15:17:39 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: orders
-2017-11-12 15:17:39 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+2017-11-19 00:24:45 [main] INFO  org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2017-11-19 00:24:45 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-11-19 00:24:45 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2017-11-19 00:24:45 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-11-19 00:24:46 [main] INFO  org.hibernate.cache.spi.UpdateTimestampsCache - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2017-11-19 00:24:46 [main] WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2017-11-19 00:24:46 [main] INFO  org.hibernate.cache.internal.StandardQueryCache - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2017-11-19 00:24:46 [main] WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2017-11-19 00:24:46 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.0.Final
+2017-11-19 00:24:46 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-11-19 00:24:46 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+2017-11-19 00:24:46 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account_Role
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Book
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Category
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: OrderDetail
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Permission
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role_Permission
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: orders
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account_Role
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Book
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Category
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: OrderDetail
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Permission
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role_Permission
+2017-11-19 00:24:46 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: orders
+2017-11-19 00:24:46 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@4fa9ab6, testMethod = testStoreBook@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@a2341c6]; rollback [true]
 Starting testStoreBook() method test...
-2017-11-12 15:17:41.068 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - New book stored: com.example.bookstore.domain.Book@984169e[    title=John Doe's life    author=JohnDoe    isbn=1234567890123  ]
-2017-11-12 15:17:41.071 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Author's book must be equal than author's stored book.
-2017-11-12 15:17:41.071 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Description of book must be equal than description of stored book.
-2017-11-12 15:17:41.071 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Isbn of book must be equal than isbn of stored book.
+2017-11-19 00:24:47.378 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - New book stored: com.example.bookstore.domain.Book@984169e[    title=John Doe's life    author=JohnDoe    isbn=1234567890123  ]
+2017-11-19 00:24:47.382 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Author's book must be equal than author's stored book.
+2017-11-19 00:24:47.382 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Description of book must be equal than description of stored book.
+2017-11-19 00:24:47.382 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Isbn of book must be equal than isbn of stored book.
 testStoreBook() method test finished...
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@4fa9ab6, testMethod = testStoreBook@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@188ac8a3, testMethod = testFindRandom@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@a2341c6]; rollback [true]
 Starting testFindRandom() method test...
-2017-11-12 15:17:41.207 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Random books found.
+2017-11-19 00:24:47.531 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Random books found.
 testFindRandom() method test finished...
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@188ac8a3, testMethod = testFindRandom@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@1caa9eb6, testMethod = testFindById@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@a2341c6]; rollback [true]
 Starting testFindById() method test...
-2017-11-12 15:17:41.214 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - After repository has been initialized, it must find the target value.
-2017-11-12 15:17:41.215 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Author found.
-2017-11-12 15:17:41.215 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Description found.
-2017-11-12 15:17:41.215 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Isbn found.
+2017-11-19 00:24:47.539 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - After repository has been initialized, it must find the target value.
+2017-11-19 00:24:47.539 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Author found.
+2017-11-19 00:24:47.540 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Description found.
+2017-11-19 00:24:47.540 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Isbn found.
 testFindById() method test finished...
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@1caa9eb6, testMethod = testFindById@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@1c8f6a90, testMethod = testFindByCategory@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@a2341c6]; rollback [true]
 Starting testFindByCategory() method test...
-2017-11-12 15:17:41.237 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Resource found: com.example.bookstore.domain.Book@12704e15[    title=The Selfish Gene: 30th Anniversary Edition    author=Richard Dawkins    isbn=9780199291151  ]
+2017-11-19 00:24:47.562 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Resource found: com.example.bookstore.domain.Book@12704e15[    title=The Selfish Gene: 30th Anniversary Edition    author=Richard Dawkins    isbn=9780199291151  ]
 testFindByCategory() method test finished...
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@1c8f6a90, testMethod = testFindByCategory@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@4e49ce2b, testMethod = testFindBooks@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@a2341c6]; rollback [true]
 Starting testFindBooks() method test...
-2017-11-12 15:17:41.289 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Concrete book found: com.example.bookstore.domain.Book@1b7a52dd[    title=The Selfish Gene: 30th Anniversary Edition    author=Richard Dawkins    isbn=9780199291151  ]
+2017-11-19 00:24:47.615 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Concrete book found: com.example.bookstore.domain.Book@1b7a52dd[    title=The Selfish Gene: 30th Anniversary Edition    author=Richard Dawkins    isbn=9780199291151  ]
 testFindBooks() method test finished...
 [main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@8bd86c8 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@4e49ce2b, testMethod = testFindBooks@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@2d3ef181 testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.266 sec
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.702 sec
 Running com.example.bookstore.service.AccountServiceTest
 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.bookstore.service.AccountServiceTest]: no resource found for suffixes {-context.xml}.
 [main] INFO org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - AnnotationConfigContextLoader detected default configuration classes for context configuration [ContextConfigurationAttributes@f5b6e78 declaringClass = 'com.example.bookstore.service.AccountServiceTest', classes = '{class com.example.bookstore.service.AccountServiceTest$AccountServiceTestContextConfiguration}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@697a34af, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@70211df5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c5228e7, org.springframework.test.context.transaction.TransactionalTestExecutionListener@38e7ed69, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@806996]
-[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@78b612c6: startup date [Sun Nov 12 15:17:41 CET 2017]; root of context hierarchy
+[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@78b612c6: startup date [Sun Nov 19 00:24:47 CET 2017]; root of context hierarchy
 Starting testLoginSuccess() method test...
-2017-11-12 15:17:41.627 [main] INFO  com.example.bookstore.service.AccountServiceTest - John login success.
-2017-11-12 15:17:41.628 [main] INFO  com.example.bookstore.service.AccountServiceTest - Doe login success.
+2017-11-19 00:24:47.792 [main] INFO  com.example.bookstore.service.AccountServiceTest - John login success.
+2017-11-19 00:24:47.792 [main] INFO  com.example.bookstore.service.AccountServiceTest - Doe login success.
 testLoginSuccess() method test finished...
 Starting testLoginFailure() method test...
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.343 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 sec
 Running com.example.bookstore.web.controller.LoginControllerTest
 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.bookstore.web.controller.LoginControllerTest]: no resource found for suffixes {-context.xml}.
 [main] INFO org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - AnnotationConfigContextLoader detected default configuration classes for context configuration [ContextConfigurationAttributes@2d55e826 declaringClass = 'com.example.bookstore.web.controller.LoginControllerTest', classes = '{class com.example.bookstore.web.controller.LoginControllerTest$LoginControllerTestConfiguration}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
 [main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@49d30c6f, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1115433e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4fdca00a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@513b52af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a8c93]
-[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@3bed3315: startup date [Sun Nov 12 15:17:41 CET 2017]; root of context hierarchy
+[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@3bed3315: startup date [Sun Nov 19 00:24:47 CET 2017]; root of context hierarchy
 Starting testHandleLogin() method test...
-2017-11-12 15:17:41.688 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - com.example.bookstore.domain.Account@60d6fdd4 can't be null.
-2017-11-12 15:17:41.688 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - John first name must be John
-2017-11-12 15:17:41.688 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - Doe first name must be Doe
-2017-11-12 15:17:41.688 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - mockHttpSession is not null as expected.
+2017-11-19 00:24:47.843 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - com.example.bookstore.domain.Account@60d6fdd4 can't be null.
+2017-11-19 00:24:47.843 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - John first name must be John
+2017-11-19 00:24:47.844 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - Doe first name must be Doe
+2017-11-19 00:24:47.844 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - mockHttpSession is not null as expected.
 testHandleLogin() method test finished...
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 sec
-[Thread-5] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@3bed3315: startup date [Sun Nov 12 15:17:41 CET 2017]; root of context hierarchy
-[Thread-3] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@732c2a62: startup date [Sun Nov 12 15:17:34 CET 2017]; root of context hierarchy
-[Thread-4] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@78b612c6: startup date [Sun Nov 12 15:17:41 CET 2017]; root of context hierarchy
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 sec
+[Thread-3] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@732c2a62: startup date [Sun Nov 19 00:24:44 CET 2017]; root of context hierarchy
+[Thread-5] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@3bed3315: startup date [Sun Nov 19 00:24:47 CET 2017]; root of context hierarchy
+[Thread-4] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@78b612c6: startup date [Sun Nov 19 00:24:47 CET 2017]; root of context hierarchy
 [Thread-3] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'bookstore'
 
 Results :
@@ -160,7 +160,7 @@ Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 23.296 s
-[INFO] Finished at: 2017-11-12T15:17:42+01:00
-[INFO] Final Memory: 24M/128M
+[INFO] Total time: 16.778 s
+[INFO] Finished at: 2017-11-19T00:24:48+01:00
+[INFO] Final Memory: 27M/290M
 [INFO] ------------------------------------------------------------------------
