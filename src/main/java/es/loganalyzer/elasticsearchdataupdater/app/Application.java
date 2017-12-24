@@ -28,9 +28,18 @@ public class Application {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
-		// resetIndex();
-		inserDataIntoElasticsearch();
+		switch (args[0]) {
+		case "reseting":
+			SpringApplication.run(Application.class, args);
+			resetIndex();
+			break;
+			
+		case "inserting":
+			SpringApplication.run(Application.class, args);
+			inserDataIntoElasticsearch();
+		default:
+			System.err.println("Invalid arguments.");
+		}
 	}
 
 	public static void inserDataIntoElasticsearch() {
