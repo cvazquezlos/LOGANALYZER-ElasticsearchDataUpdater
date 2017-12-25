@@ -37,6 +37,7 @@ public class Application {
 		case "inserting":
 			SpringApplication.run(Application.class, args);
 			inserDataIntoElasticsearch();
+			break;
 		default:
 			System.err.println("Invalid arguments.");
 		}

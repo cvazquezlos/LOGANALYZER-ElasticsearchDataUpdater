@@ -1,0 +1,245 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building bookstore-example-with-mvc 1.0
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/2.5/maven-clean-plugin-2.5.pom (3.9 kB at 4.6 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/22/maven-plugins-22.pom (13 kB at 120 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/2.4/maven-install-plugin-2.4.pom (6.4 kB at 74 kB/s)
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ bookstore-example-with-mvc ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0/plexus-utils-3.0.jar (226 kB at 1.1 MB/s)
+[INFO] Deleting C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ bookstore-example-with-mvc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 316 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:compile (default-compile) @ bookstore-example-with-mvc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 60 source files to C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\classes
+[INFO] /C:/Users/cvazquel/Documents/GitHub/LOGANALYZER-SpringLogsGenerator/src/main/java/com/example/bookstore/web/view/OrderExcelView.java: C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\src\main\java\com\example\bookstore\web\view\OrderExcelView.java uses or overrides a deprecated API.
+[INFO] /C:/Users/cvazquel/Documents/GitHub/LOGANALYZER-SpringLogsGenerator/src/main/java/com/example/bookstore/web/view/OrderExcelView.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ bookstore-example-with-mvc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.0:testCompile (default-testCompile) @ bookstore-example-with-mvc ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ bookstore-example-with-mvc ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.pom (3.0 kB at 29 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.pom (2.5 kB at 29 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.pom (5.5 kB at 64 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.pom (1.6 kB at 12 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.1/maven-plugin-tools-3.1.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-tools/3.1/maven-plugin-tools-3.1.pom (16 kB at 88 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.pom (1.8 kB at 24 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.9/maven-reporting-2.0.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting/2.0.9/maven-reporting-2.0.9.pom (1.5 kB at 18 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.pom (3.5 kB at 31 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.pom (3.7 kB at 42 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/12/maven-shared-components-12.pom (9.3 kB at 55 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/13/maven-parent-13.pom (23 kB at 229 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-9/plexus-container-default-1.0-alpha-9.pom (1.2 kB at 13 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-booter/2.12.4/surefire-booter-2.12.4.jar (35 kB at 381 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/reporting/maven-reporting-api/2.0.9/maven-reporting-api-2.0.9.jar (10 kB at 67 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-toolchain/2.0.9/maven-toolchain-2.0.9.jar (38 kB at 209 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-common-artifact-filters/1.3/maven-common-artifact-filters-1.3.jar (31 kB at 167 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugin-tools/maven-plugin-annotations/3.1/maven-plugin-annotations-3.1.jar (14 kB at 56 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-api/2.12.4/surefire-api-2.12.4.jar (118 kB at 431 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/maven-surefire-common/2.12.4/maven-surefire-common-2.12.4.jar (263 kB at 688 kB/s)
+[INFO] Surefire report directory: C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\surefire-reports
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.pom (2.4 kB at 19 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-providers/2.12.4/surefire-providers-2.12.4.pom (2.3 kB at 24 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire-junit4/2.12.4/surefire-junit4-2.12.4.jar (37 kB at 291 kB/s)
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.example.bookstore.basic.BasicUnitTest
+Starting testDeleteQuery() method test...
+2017-12-24 12:59:52.427 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database must contain any target value.
+2017-12-24 12:59:52.433 [main] INFO  com.example.bookstore.basic.BasicUnitTest - After deleting info, database size have to be 19.
+2017-12-24 12:59:52.433 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database can't contain target value.
+testDeleteQuery() method test finished...
+Starting testAddQuery() method test...
+2017-12-24 12:59:52.435 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database can't contain target value.
+2017-12-24 12:59:52.435 [main] INFO  com.example.bookstore.basic.BasicUnitTest - After adding info, database size have to be 21.
+2017-12-24 12:59:52.435 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database must contain target value.
+testAddQuery() method test finished...
+Starting testFindQuery() method test...
+2017-12-24 12:59:52.435 [main] INFO  com.example.bookstore.basic.BasicUnitTest - Database must find target value.
+testFindQuery() method test finished...
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.907 sec
+Running com.example.bookstore.repository.JpaBookRepositoryTest
+[main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5136d012, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5939a379, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e1de817, org.springframework.test.context.transaction.TransactionalTestExecutionListener@52102734, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3541cb24]
+[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@732c2a62: startup date [Sun Dec 24 12:59:53 CET 2017]; root of context hierarchy
+[main] INFO org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader - Skipping bean definition for [BeanMethod:name=accountRepository,declaringClass=com.example.bookstore.service.AccountServiceTest$AccountServiceTestContextConfiguration]: a definition for bean 'accountRepository' already exists. This top-level bean definition is considered as an override.
+[main] INFO org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory - Creating embedded database 'testdb'
+[main] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'bookstore'
+2017-12-24 12:59:54 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.1.Final}
+2017-12-24 12:59:54 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.1.9.Final}
+2017-12-24 12:59:54 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2017-12-24 12:59:54 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2017-12-24 12:59:54 [main] INFO  org.hibernate.ejb.Ejb3Configuration - HHH000204: Processing PersistenceUnitInfo [
+	name: bookstore
+	...]
+2017-12-24 12:59:55 [main] INFO  org.hibernate.service.jdbc.connections.internal.ConnectionProviderInitiator - HHH000130: Instantiating explicit connection provider: org.hibernate.ejb.connection.InjectedDataSourceConnectionProvider
+2017-12-24 12:59:55 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2017-12-24 12:59:56 [main] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator - HHH000268: Transaction strategy: org.hibernate.engine.transaction.internal.jdbc.JdbcTransactionFactory
+2017-12-24 12:59:56 [main] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+2017-12-24 12:59:56 [main] INFO  org.hibernate.cache.spi.UpdateTimestampsCache - HHH000250: Starting update timestamps cache at region: org.hibernate.cache.spi.UpdateTimestampsCache
+2017-12-24 12:59:56 [main] WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.spi.UpdateTimestampsCache]; using defaults.
+2017-12-24 12:59:56 [main] INFO  org.hibernate.cache.internal.StandardQueryCache - HHH000248: Starting query cache at region: org.hibernate.cache.internal.StandardQueryCache
+2017-12-24 12:59:56 [main] WARN  org.hibernate.cache.ehcache.AbstractEhcacheRegionFactory - HHH020003: Could not find a specific ehcache configuration for cache named [org.hibernate.cache.internal.StandardQueryCache]; using defaults.
+2017-12-24 12:59:56 [main] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.0.Final
+2017-12-24 12:59:57 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2017-12-24 12:59:57 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+2017-12-24 12:59:57 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account_Role
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Book
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Category
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: OrderDetail
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Permission
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role_Permission
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: orders
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Account_Role
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Book
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Category
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: OrderDetail
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Permission
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: Role_Permission
+2017-12-24 12:59:57 [main] INFO  java.sql.DatabaseMetaData - HHH000262: Table not found: orders
+2017-12-24 12:59:57 [main] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@a2341c6, testMethod = testStoreBook@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3e3315d9]; rollback [true]
+Starting testStoreBook() method test...
+2017-12-24 12:59:58.828 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - New book stored: com.example.bookstore.domain.Book@6d6bbd35[    title=John Doe's life    author=JohnDoe    isbn=1234567890123  ]
+2017-12-24 12:59:58.831 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Author's book must be equal than author's stored book.
+2017-12-24 12:59:58.831 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Description of book must be equal than description of stored book.
+2017-12-24 12:59:58.832 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Isbn of book must be equal than isbn of stored book.
+testStoreBook() method test finished...
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@a2341c6, testMethod = testStoreBook@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@aaa0f76, testMethod = testFindRandom@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3e3315d9]; rollback [true]
+Starting testFindRandom() method test...
+2017-12-24 12:59:58.913 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Random books found.
+testFindRandom() method test finished...
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@aaa0f76, testMethod = testFindRandom@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@2fcd7d3f, testMethod = testFindById@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3e3315d9]; rollback [true]
+Starting testFindById() method test...
+2017-12-24 12:59:58.920 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - After repository has been initialized, it must find the target value.
+2017-12-24 12:59:58.921 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Author found.
+2017-12-24 12:59:58.921 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Description found.
+2017-12-24 12:59:58.921 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Isbn found.
+testFindById() method test finished...
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@2fcd7d3f, testMethod = testFindById@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@265bd546, testMethod = testFindByCategory@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3e3315d9]; rollback [true]
+Starting testFindByCategory() method test...
+2017-12-24 12:59:58.940 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Resource found: com.example.bookstore.domain.Book@6f1a16fe[    title=The Selfish Gene: 30th Anniversary Edition    author=Richard Dawkins    isbn=9780199291151  ]
+testFindByCategory() method test finished...
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@265bd546, testMethod = testFindByCategory@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Began transaction (1) for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@53c6f96d, testMethod = testFindBooks@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@3e3315d9]; rollback [true]
+Starting testFindBooks() method test...
+2017-12-24 12:59:58.986 [main] INFO  com.example.bookstore.repository.JpaBookRepositoryTest - Concrete book found: com.example.bookstore.domain.Book@5ad5be4a[    title=The Selfish Gene: 30th Anniversary Edition    author=Richard Dawkins    isbn=9780199291151  ]
+testFindBooks() method test finished...
+[main] INFO org.springframework.test.context.transaction.TransactionContext - Rolled back transaction for test context [DefaultTestContext@2d3ef181 testClass = JpaBookRepositoryTest, testInstance = com.example.bookstore.repository.JpaBookRepositoryTest@53c6f96d, testMethod = testFindBooks@JpaBookRepositoryTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@6e4c0d8c testClass = JpaBookRepositoryTest, locations = '{}', classes = '{class com.example.bookstore.config.InfrastructureContextConfiguration, class com.example.bookstore.config.TestDataContextConfiguration}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.519 sec
+Running com.example.bookstore.service.AccountServiceTest
+[main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.bookstore.service.AccountServiceTest]: no resource found for suffixes {-context.xml}.
+[main] INFO org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - AnnotationConfigContextLoader detected default configuration classes for context configuration [ContextConfigurationAttributes@71926a36 declaringClass = 'com.example.bookstore.service.AccountServiceTest', classes = '{class com.example.bookstore.service.AccountServiceTest$AccountServiceTestContextConfiguration}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+[main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c5228e7, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@38e7ed69, org.springframework.test.context.support.DirtiesContextTestExecutionListener@806996, org.springframework.test.context.transaction.TransactionalTestExecutionListener@78b612c6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@257e0827]
+[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@22752544: startup date [Sun Dec 24 12:59:58 CET 2017]; root of context hierarchy
+Starting testLoginSuccess() method test...
+2017-12-24 12:59:59.292 [main] INFO  com.example.bookstore.service.AccountServiceTest - John login success.
+2017-12-24 12:59:59.292 [main] INFO  com.example.bookstore.service.AccountServiceTest - Doe login success.
+testLoginSuccess() method test finished...
+Starting testLoginFailure() method test...
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.309 sec
+Running com.example.bookstore.web.controller.LoginControllerTest
+[main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.bookstore.web.controller.LoginControllerTest]: no resource found for suffixes {-context.xml}.
+[main] INFO org.springframework.test.context.support.AbstractDelegatingSmartContextLoader - AnnotationConfigContextLoader detected default configuration classes for context configuration [ContextConfigurationAttributes@45f756e6 declaringClass = 'com.example.bookstore.web.controller.LoginControllerTest', classes = '{class com.example.bookstore.web.controller.LoginControllerTest$LoginControllerTestConfiguration}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+[main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[main] INFO org.springframework.test.context.support.DefaultTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4fdca00a, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@513b52af, org.springframework.test.context.support.DirtiesContextTestExecutionListener@5a8c93, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3bed3315, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@119b0892]
+[main] INFO org.springframework.context.support.GenericApplicationContext - Refreshing org.springframework.context.support.GenericApplicationContext@1a3e8e24: startup date [Sun Dec 24 12:59:59 CET 2017]; root of context hierarchy
+Starting testHandleLogin() method test...
+2017-12-24 12:59:59.357 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - com.example.bookstore.domain.Account@60a19573 can't be null.
+2017-12-24 12:59:59.357 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - John first name must be John
+2017-12-24 12:59:59.357 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - Doe first name must be Doe
+2017-12-24 12:59:59.357 [main] INFO  com.example.bookstore.web.controller.LoginControllerTest - mockHttpSession is not null as expected.
+testHandleLogin() method test finished...
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 sec
+[Thread-5] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@1a3e8e24: startup date [Sun Dec 24 12:59:59 CET 2017]; root of context hierarchy
+[Thread-3] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@732c2a62: startup date [Sun Dec 24 12:59:53 CET 2017]; root of context hierarchy
+[Thread-4] INFO org.springframework.context.support.GenericApplicationContext - Closing org.springframework.context.support.GenericApplicationContext@22752544: startup date [Sun Dec 24 12:59:58 CET 2017]; root of context hierarchy
+[Thread-3] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'bookstore'
+
+Results :
+
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.3:war (default-war) @ bookstore-example-with-mvc ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [bookstore-example-with-mvc] in [C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\bookstore-example-with-mvc-1.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\src\main\webapp]
+[INFO] Building jar: C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\bookstore-example-with-mvc-1.0\WEB-INF\lib\bookstore-example-with-mvc-1.0.jar
+[INFO] Webapp assembled in [2939 msecs]
+[INFO] Building war: C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\bookstore-example-with-mvc-1.0.war
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ bookstore-example-with-mvc ---
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.pom (2.5 kB at 6.8 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.pom (1.1 kB at 4.6 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-components/1.1.7/plexus-components-1.1.7.pom (5.0 kB at 49 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/1.0.8/plexus-1.0.8.pom (7.2 kB at 54 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-container-default/1.0-alpha-8/plexus-container-default-1.0-alpha-8.pom (7.3 kB at 47 kB/s)
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar
+[INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-digest/1.0/plexus-digest-1.0.jar (12 kB at 53 kB/s)
+[INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.0.5/plexus-utils-3.0.5.jar (230 kB at 829 kB/s)
+[INFO] Installing C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\target\bookstore-example-with-mvc-1.0.war to C:\Users\cvazquel\.m2\repository\com\example\springmvc\bookstore-example-with-mvc\1.0\bookstore-example-with-mvc-1.0.war
+[INFO] Installing C:\Users\cvazquel\Documents\GitHub\LOGANALYZER-SpringLogsGenerator\pom.xml to C:\Users\cvazquel\.m2\repository\com\example\springmvc\bookstore-example-with-mvc\1.0\bookstore-example-with-mvc-1.0.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 37.793 s
+[INFO] Finished at: 2017-12-24T13:00:06+01:00
+[INFO] Final Memory: 32M/273M
+[INFO] ------------------------------------------------------------------------
